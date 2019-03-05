@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/earth.ico" />
+    <title>The Wandering Earth</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <header id="sectionHome">
+        <div class="container menuContainer">
+            <div id="menuOne" class="menu menuOne"></div>
+            <div id="menuTwo" class="menu menuTwo">
+                <img id="btnShow" class="menuIcon" src="images/icons/menu.svg" alt="">
+            </div>
+            <div id="navMenu" class="container navMenu displayNone">
+                <div class="row">
+                    <div class="col-12">
+                        <img id="btnClose" class="closeIcon" src="images/icons/close.svg" alt="">
+                    </div>
+                    <div class="col-12 menuItem active"><a href="#sectionHome">HOME</a></div>
+                    <div class="col-12 menuItem"><a href="#sectionFocus">FOCUS</a></div>
+                    <div class="col-12 menuItem"><a href="#sectionVideo">VIDEOS</a></div>
+                    <div class="col-12 menuItem"><a href="#sectionBoxOffice">BOX OFFICE</a></div>
+                    <div class="col-12 menuItem"><a href="#sectionPhoto">PHOTOS</a></div>
+                    <div class="col-12 menuItem"><a href="#sectionMedia">MEDIA</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Description -->
+    <section class="section container" id="sectionFocus">
+        <div class="row focusContainer">
+            <div class="col-sm-12 sectionTitle">FOCUS</div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <img class="poster" src="images/poster.jpg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-6 detailContainer">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">The Wandering Earth</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>
+                            <strong>Director:</strong>
+                            <a href="#">Frant Gwo</a>
+                        </p>
+                        <p>
+                            <strong>Writers:</strong>
+                            <a href="#">Gong Geer</a>,
+                            <a href="#">Junce Ye</a>
+                        </p>
+                        <p>
+                            <strong>Stars:</strong>
+                            <a href="#">Chuxiao Qu</a>,
+                            <a href="#">Jing Wu</a>,
+                            <a href="#">Guangjie Li</a> |
+                            <a href="#">See full cast & crew</a> >>
+                        </p>
+                        <p>
+                            <strong>Genres:</strong>
+                            <a href="#">Sci-Fi</a>
+                        </p>
+                        <p>
+                            <strong>Country:</strong>
+                            <a href="#">Chinai</a>
+                        </p>
+                        <p>
+                            <strong>Language:</strong>
+                            <a href="#">Mandarin</a> |
+                            <a href="#">English</a> |
+                            <a href="#">Russian</a> |
+                            <a href="#">French</a> |
+                            <a href="#">Japanese</a> |
+                            <a href="#">Korean</a>
+                        </p>
+                        <p>
+                            <strong>Release Date:</strong>
+                            <time>5 February 2019 (China)</time>
+                        </p>
+                        <p>
+                            <strong>Runtime:</strong>
+                            <time>125 min</time>
+                        </p>
+                        <p>
+                            <strong>Also known As:</strong>
+                            <span>The Wandering Earth</span>
+                        </p>
+                        <p>
+                            <strong>Filming Locations:</strong>
+                            <a href="#">Qingdao, China</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <h4 class="feedbackTitle">Audience Feedback</h4>
+                <div class="row">
+                    <div class="col-3 score">7.9</div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="imagesGroup">
+                                    <img src="images/icons/star filled.svg" alt="">
+                                    <img src="images/icons/star filled.svg" alt="">
+                                    <img src="images/icons/star filled.svg" alt="">
+                                    <img src="images/icons/star filled.svg" alt="">
+                                    <img src="images/icons/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <a href="#" class="review">936741 reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <canvas id="starChart" width="90" height="50"></canvas>
+                    </div>
+                </div>
+                <div class="row comparePercentage">
+                    <div class="col-sm-12">Better than 86% Science Fiction
+                        film</div>
+                    <div class="col-sm-12">Better than 86% Disaster film</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos -->
+    <section class="section videoSection" id="sectionVideo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 sectionTitle">VIDEOS</div>
+                <div class="col-sm-12 col-md-9 videoEl">
+                    <iframe id="videoOne" src="https://www.youtube.com/embed/_lsOwtKNsAA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe id="videoTwo" class="displayNone" src="https://www.youtube.com/embed/e3oG0ZsuUcY"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-md-3 videoLists">
+                    <div class="row">
+                        <!-- <div class="col-sm-6 col-md-12 firstList"> -->
+                        <div class="col-6 col-md-12 firstList">
+                            <img id="firstList" src="images/list1.jpg" class="activeList" alt="">
+                        </div>
+                        <!-- <div class="col-sm-6 col-md-12"> -->
+                        <div class="col-6 col-md-12">
+                            <img id="secondList" src="images/list2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Box office -->
+    <section class="section boxOfficeSection" id="sectionBoxOffice">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 sectionTitle">BOX OFFICE</div>
+                <div class="col-12 col-md-3">
+                    <div class="sideBarBoxOffice">
+                        <div class="row sideBarItemContainer">
+                            <div class="col-4 col-md-12 sideBarItem active">
+                                <input id="btnBarChart" type="button" value="Bar Chart" class=" chartButton">
+                                <img id="activeIcon" src="images/icons/arrow.png" class="activeIcon" alt="">
+                            </div>
+                            <div class="col-4 col-md-12 sideBarItem ">
+                                <input id="btnPieChart" type="button" value="Pie Chart" class=" chartButton">
+                            </div>
+                            <div class="col-4 col-md-12 sideBarItem">
+                                <input id="btnLineChart" type="button" value="Line Chart" class="chartButton">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="col-sm-12 chartTitle">Last Box Office of 'The Wandering
+                        Earth' - Since 16 Feb, 2019 to 20 Feb, 2019</div>
+                    <div class="col-sm-12 boxOfficeChartContainer">
+                        <canvas id="boxOfficeBarChart" width="90" height="50" class="boxOfficeChart"></canvas>
+                    </div>
+                    <div class="col-sm-12 boxOfficeChartContainer displayNone">
+                        <canvas id="boxOfficePieChart" width="90" height="50" class="boxOfficeChart"></canvas>
+                    </div>
+                    <div class="col-sm-12 boxOfficeChartContainer displayNone">
+                        <canvas id="boxOfficeLineChart" width="90" height="50" class="boxOfficeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Photos -->
+    <section class="section photoSection" id="sectionPhoto">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 sectionTitle">PHOTOS</div>
+                <!-- <div class="photosContainer"> -->
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo1.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo2.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo3.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo4.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo5.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 photoContainer">
+                    <img src="images/photo6.jpg" alt="">
+                </div>
+            </div>
+            <!-- </div> -->
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="sectionMedia">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-sm-12 sectionTitle">Follow us on</div> -->
+                <!-- <img src="images/icons/instagram.svg" alt=""> -->
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mediaContainer">
+                            <a href="#"><img src="images/icons/i.png" class="media" alt=""></a>
+                            <a href="#"><img src="images/icons/t.png" class="media" alt=""></a>
+                            <a href="#"><img src="images/icons/y.png" class="media" alt=""></a>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <ul class="row">
+                                <li class="col-4 col-lg-2"><a href="#sectionHome">HOME</a> </li>
+                                <li class="col-4 col-lg-2"><a href="#sectionFocus">FOCUS</a> </li>
+                                <li class="col-4 col-lg-2"><a href="#sectionVideo">VIDEOS</a> </li>
+                                <li class="col-4 col-lg-2"><a href="#sectionBoxOffice">BOX OFFICE</a> </li>
+                                <li class="col-4 col-lg-2"><a href="#sectionPhoto">PHOTOS</a> </li>
+                                <li class="col-4 col-lg-2"><a href="#sectionMedia">MEDIA</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 copyright">Copyright @ Yoobee School of Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="script/stars.js"></script>
+<script src="script/barChart.js"></script>
+<script src="script/pieChart.js"></script>
+<script src="script/lineChart.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="script/script.js"></script>
+
+</html>

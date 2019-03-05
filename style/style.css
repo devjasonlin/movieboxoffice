@@ -1,0 +1,550 @@
+@charset "UTF-8";
+@keyframes hideIndex {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hideIndex {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes showIndex {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hideMenu {
+  animation: hideIndex 1s;
+  -webkit-animation: hideIndex 1s;
+  /* Safari 与 Chrome */
+  opacity: 0;
+}
+
+.showMenu {
+  animation: showIndex 1s;
+  -webkit-animation: showIndex 1s;
+  /* Safari 与 Chrome */
+  opacity: 1 !important;
+}
+
+header {
+  background: url(../images/pic1.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+header .menuContainer {
+  position: relative;
+  height: 100vh;
+}
+
+header .menuContainer .menu {
+  background: #2e3131;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -moz-transform: rotate(45deg);
+  /* Firefox */
+  -webkit-transform: rotate(45deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(45deg);
+  /* Opera */
+  position: absolute;
+}
+
+header .menuContainer .menuOne {
+  bottom: 8%;
+  right: 0;
+}
+
+header .menuContainer #menuOne {
+  display: block;
+}
+
+header .menuContainer .menuTwo {
+  bottom: 58%;
+  right: 0;
+}
+
+header .menuContainer .menuTwo .menuIcon {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -moz-transform: rotate(-45deg);
+  /* Firefox */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-45deg);
+  /* Opera */
+  width: 12%;
+  position: absolute;
+  top: 45%;
+  right: 45%;
+}
+
+header .menuContainer .menuTwo .menuIcon:hover {
+  cursor: pointer;
+}
+
+header .menuContainer .navMenu {
+  opacity: 0;
+  height: 100vh;
+  width: 20%;
+  max-width: 500px;
+  min-width: 200px;
+  background: #2e3131;
+  position: absolute;
+  right: 0;
+}
+
+header .menuContainer .navMenu .closeIcon {
+  width: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+header .menuContainer .navMenu .closeIcon:hover {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -ms-transform-duration: 1s;
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  -webkit-transform-duration: 1s;
+  transform: rotate(90deg);
+  transition-duration: 1s;
+}
+
+header .menuContainer .navMenu .menuItem {
+  text-align: center;
+  line-height: 60px;
+  z-index: 999;
+  height: 60px;
+  background-color: #2e3131;
+  color: #dadfe1;
+}
+
+header .menuContainer .navMenu .menuItem:hover {
+  background-color: #dadfe1;
+  color: #2e3131;
+  cursor: pointer;
+}
+
+header .menuContainer .navMenu .menuItem a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #dadfe1;
+}
+
+header .menuContainer .navMenu .menuItem a:hover {
+  color: #2e3131;
+  text-decoration: none;
+}
+
+header .menuContainer .navMenu .active {
+  background-color: #dadfe1;
+  color: #2e3131;
+}
+
+header .menuContainer .navMenu .active a {
+  color: #2e3131;
+}
+
+.sectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2e3131;
+  margin-bottom: 15px;
+}
+
+.section {
+  z-index: 999;
+}
+
+.section .focusContainer {
+  padding-bottom: 30px;
+}
+
+.section .focusContainer a {
+  color: #00b5cc;
+}
+
+.section .focusContainer a:hover {
+  text-decoration: none;
+  color: rgba(0, 181, 204, 0.8);
+}
+
+.section .row div .poster {
+  width: 100%;
+}
+
+.section .row .title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.section .row p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.section .row .imagesGroup img {
+  width: 10%;
+  min-width: 18px;
+  max-width: 18px;
+}
+
+.section .row .feedbackTitle {
+  font-size: 1.2rem;
+}
+
+.section .row .score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e3131;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.section .row .review {
+  display: block;
+  color: #00b5cc;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.section .row .review:hover {
+  color: rgba(0, 181, 204, 0.7);
+}
+
+.section .row #starChart {
+  max-width: 360px;
+  max-height: 200px;
+  min-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section .comparePercentage {
+  font-size: 0.8rem;
+}
+
+.videoSection {
+  background-color: #dadfe1;
+}
+
+.videoSection .videoEl {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.videoSection .videoEl #videoOne, .videoSection .videoEl #videoTwo {
+  width: 100%;
+  height: 100%;
+  max-width: 560px;
+  max-height: 315px;
+  min-width: 290px;
+  min-height: 220px;
+}
+
+.videoSection .videoLists {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.videoSection .videoLists img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.videoSection .videoLists img:hover {
+  opacity: 0.7;
+}
+
+.videoSection .videoLists .firstList {
+  margin-bottom: 30px;
+}
+
+.videoSection .videoLists .activeList {
+  opacity: 0.7;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  header .menu {
+    margin-right: 0 !important;
+    background: none !important;
+    transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    /* IE 9 */
+    -moz-transform: rotate(0deg) !important;
+    /* Firefox */
+    -webkit-transform: rotate(0deg) !important;
+    /* Safari 和 Chrome */
+    -o-transform: rotate(0deg) !important;
+    /* Opera */
+  }
+  #menuOne {
+    display: none;
+  }
+  #menuTwo {
+    top: 0;
+  }
+  #menuTwo .menuIcon {
+    max-width: 30px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -moz-transform: rotate(0deg);
+    /* Firefox */
+    -webkit-transform: rotate(0deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(0deg);
+    /* Opera */
+    top: 30px !important;
+    right: 30px !important;
+  }
+  .detailContainer {
+    border-top: 1px solid #2e3131;
+    border-bottom: 1px solid #2e3131;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .boxOfficeSection .sideBarBoxOffice {
+    margin-bottom: 10px;
+  }
+  .boxOfficeSection .sideBarBoxOffice .sideBarItemContainer {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .boxOfficeSection .sideBarBoxOffice .sideBarItem {
+    height: 35px !important;
+    line-height: 35px !important;
+    border: none;
+  }
+  .boxOfficeSection .sideBarBoxOffice .sideBarItem:nth-child(2) {
+    border: none !important;
+    border-left: 1px solid #2e3131 !important;
+    border-right: 1px solid #2e3131 !important;
+  }
+  .boxOfficeSection .sideBarBoxOffice .activeIcon {
+    bottom: 0;
+    top: 100% !important;
+    left: 50% !important;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -webkit-transform: rotate(90deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(90deg);
+    /* Opera */
+    margin-bottom: 20px !important;
+  }
+}
+
+.boxOfficeSection {
+  padding: 0;
+  width: 100%;
+}
+
+.boxOfficeSection .boxOfficeChartContainer {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.boxOfficeSection .sideBarBoxOffice {
+  padding: 0;
+  width: 100%;
+}
+
+.boxOfficeSection .sideBarBoxOffice .row div {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem {
+  height: 4vw;
+  background: #dadfe1;
+  line-height: 4vw;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem:hover {
+  background: #2e3131;
+  color: #fff;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem:nth-child(2) {
+  border-top: 1px solid #2e3131;
+  border-bottom: 1px solid #2e3131;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem .chartButton {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem .chartButton:hover {
+  background: #2e3131;
+  color: #fff;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem input {
+  outline: none;
+}
+
+.boxOfficeSection .sideBarBoxOffice .sideBarItem input:focus, .boxOfficeSection .sideBarBoxOffice .sideBarItem input:active {
+  outline: none;
+}
+
+.boxOfficeSection .sideBarBoxOffice .active {
+  background: #2e3131;
+}
+
+.boxOfficeSection .sideBarBoxOffice .active input {
+  color: #fff;
+}
+
+.boxOfficeSection .sideBarBoxOffice .active input:focus, .boxOfficeSection .sideBarBoxOffice .active input:active {
+  outline: none;
+}
+
+.boxOfficeSection .sideBarBoxOffice .activeIcon {
+  width: 8%;
+  position: absolute;
+  z-index: 999;
+  top: 35%;
+  right: -7%;
+}
+
+.boxOfficeSection .chartTitle {
+  text-align: center;
+}
+
+.boxOfficeSection .boxOfficeChart {
+  width: 100% !important;
+  max-width: 550px !important;
+  height: 100% !important;
+  max-height: 300px !important;
+  text-align: center;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.photoSection {
+  background-color: #dadfe1;
+}
+
+.photoSection .photoSectionRow {
+  width: 100%;
+  padding: 0;
+}
+
+.photoSection .photoContainer {
+  padding: 50px 0;
+}
+
+.photoSection .photoContainer img {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  footer .mediaContainer {
+    display: inline-block;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+  }
+  footer ul {
+    margin-top: 10px;
+    padding: 0;
+  }
+  footer ul li {
+    height: 30px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+footer .mediaContainer a {
+  width: 50%;
+  max-width: 40px;
+  display: inline-block;
+}
+
+footer .mediaContainer a .media {
+  width: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer .mediaContainer a .media:hover {
+  opacity: 0.8;
+}
+
+footer ul li {
+  float: right;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+  width: 135px;
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+  color: #2e3131;
+}
+
+footer ul li a:hover {
+  color: rgba(46, 49, 49, 0.8);
+  text-decoration: none;
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}
